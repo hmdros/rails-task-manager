@@ -1,0 +1,29 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+  background-color: #27233A;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 5px;
+  box-shadow: 1px 1px;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+.card {
+  margin: 20px;
+  background-color: #DCC48E;
+  border-radius: 5px;
+}
+
+body {
+background-color: #EAEFD3;
+}
+
+#check {
+
+}

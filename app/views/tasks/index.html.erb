@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>My tasks</h1>
+  <ul>
+    <% @tasks.each do |task| %>
+    <%= link_to task do %><div class="card">
+      <li>
+        <p>Task name: <%= task.title %></p>
+        <p>Completed: <%= task.completed %></p>
+      </li>
+    </div>
+    <div>
+      <%= link_to done_path(task), method: :post do %>
+      <input type="checkbox" id="check" class="form-check-input">
+      <% end %>
+    </div>
+    <% end %>
+    <div class="btn btn-danger">
+      <%= link_to "Delete", task_path(task), method: :delete%>
+    </div>
+    <% end %>
+  </ul>
+  <%= link_to "+ Add a new task", new_task_path %>
+</div>
